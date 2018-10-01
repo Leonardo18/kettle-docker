@@ -1,0 +1,9 @@
+version: '2'
+services:
+  job:
+    build:
+      context: .
+      args:
+        KETTLE_ENVIRONMENT: local
+    ports:
+      - "8080:8080"
